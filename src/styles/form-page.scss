@@ -1,0 +1,109 @@
+.form-wrapper{
+    form{
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        justify-content: center;
+        align-items: top;
+        padding: 80px;
+        .left, .right{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .input-field-wrapper{
+            display: flex;
+            flex-direction: column;
+            min-width: 250px;
+            font-size: 18px;
+            input{
+                line-height: 30px;
+                border-radius: 5px;
+                background-color: #ededed;
+            }
+            select, option{
+                height: 30px;
+                border-radius: 5px;
+                border: 2px solid;
+                background-color: #ededed;
+            }
+            textarea{
+                border-radius: 5px;
+                border: 2px solid;
+                background-color: #ededed;
+            }
+           
+            
+        }
+    }
+}
+.button-wrapper{
+    input{
+        background-color: green;
+    color: aliceblue;
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    }
+}
+.form-page-wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    .img-container{
+        max-height: 40vh;
+        width: 40vw;
+        .img-wrapper{
+            max-height: 40vh;
+            width: 40vw;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    
+    .form-page-wrapper{
+        margin-top: 66px;
+    }
+
+
+    .form-wrapper {
+        form {
+            flex-direction: column;
+            gap: 20px;
+            padding: 20px;
+            
+            .left, .right {
+                gap: 15px;
+            }
+            
+            .input-field-wrapper {
+                min-width: auto;
+                font-size: 16px;
+                
+                input, select {
+                    font-size: 16px;
+                }
+                
+                select, option {
+                    height: 40px;
+                }
+            }
+        }
+    }
+    
+    .img-container {
+        max-height: 30vh;
+        width: 100%;
+        
+        .img-wrapper {
+            max-height: 30vh;
+            width: 100%;
+        }
+    }
+}

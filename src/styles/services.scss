@@ -1,0 +1,22 @@
+.services{
+
+    background-image: url('../assets/visual-content/_0068833c-afcb-4760-b027-59528b5af0f5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    justify-content: center;
+    padding: 70px 50px;
+    max-width: 100vw;
+
+    
+        .content-item{
+            &:hover{
+                width: 380px;
+                height: 380px;
+            }
+        }
+}

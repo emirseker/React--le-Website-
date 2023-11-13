@@ -1,0 +1,142 @@
+.hero {
+    
+    overflow: hidden;
+    height: 650px; /* veya istediğiniz yüksekliği belirleyebilirsiniz */
+    margin-top: -20px; /* İstenilen negatif değeri kullanarak köşelerden biraz soldurabilirsiniz */
+  }
+  
+  
+  .hero-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+  }
+  
+  .hero .hero-box .hero-title {
+    font-size: 3rem;
+    font-weight: 900;
+    text-align:center;
+}
+
+.hero .hero-box .hero-text {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align:center;
+    margin-bottom: 2rem;
+}
+.hero-text-title{
+  font-size: 18px;
+  margin-bottom: 2rem;
+}
+  
+  
+  .image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+    z-index: -1;
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+  }
+  
+  .shadow {
+    /* İstenirse gölge ekleyebilirsiniz */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 40%);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);
+  }
+  .giris{
+    display: flex;
+    position: relative;
+  }
+
+  .downbutton{
+    display: flex;
+    margin-left: 140px;
+    margin-top: 50px;
+    gap: 53px;
+  }
+
+  .scroll-wrapper{
+    font-size: 40px;
+  }
+
+  .kesfet{
+    font-size: 30px;
+  }
+
+  .connectbut{
+    padding: 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  .connectbut:hover{
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    width: 500px;
+    margin-left: 130px;
+  
+  }
+
+  .connectbut:active{
+    background-color: #d0d0d0;
+  }
+
+  @media (max-width:958px) {
+    .image-container {
+      height: 1000px; 
+    }
+
+    .connectbut{
+      padding: 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    .connectbut:hover{
+      margin-left: 10px;
+    }
+    }
+  }
+
+
+  @media (max-width:598px) {
+    
+
+    .connectbut{
+      padding: 20px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    
+   
+    }
+    .connectbut:hover{
+      margin-left: 10px;
+      width: 300px;
+    }
+  }
+
+  

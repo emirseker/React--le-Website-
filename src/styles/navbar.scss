@@ -1,0 +1,198 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    padding: 0 75px;
+    height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ededed;
+    max-width: 100vw;
+
+    
+
+    a{
+        
+        font-style: normal;
+        text-decoration: none;
+        color: #000;
+        font-weight: bold;
+        &:hover{
+            background-color: #dedede;
+        }
+        border-left: 1px solid black;
+        padding: 5px 5px;
+
+        &:first-child{
+            border: none;
+        }
+    }
+
+    .logo-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: -33px;
+
+        .brand-name{
+            font-size: 18;
+            font-weight: bold;
+        }
+
+        .logo-wrapper{
+            height: 60px;
+            justify-content: center;
+            img{
+                height: 100%;
+            }
+        }
+    }   
+
+    .nav-section{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        // gap: 50px;
+
+        .nav-button{
+            padding: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: all 1s;
+            cursor: pointer;
+        }
+        .collapse{
+            position: relative;
+            transition: all 1s;
+            border-left: 1px solid black;
+
+            .icon{
+                vertical-align: bottom;
+                margin-left: 5px;
+                transform: rotate(180deg);
+            }
+
+            &:hover{
+                background-color: #dedede;
+                .icon{
+                    transform: rotate(0deg);
+                }
+                
+            }
+            
+            .collapsable-box{
+                transition: all 1s;
+                display: none;
+                position: absolute;
+                width: 140px;
+                left: 0px;
+                top: 100%;
+                background-color: #ededed;
+                z-index: 1;
+                
+                .link-wrapper{
+                    display: flex;
+                    flex-direction: column;
+                    width: 140px;
+                    a{
+                        border: none;
+                        width: 120px;
+                        font-weight: lighter;
+                        padding: 10px;
+                        &:first-child{
+                            border-bottom: solid 1px hsla(0, 0, 0, 0.2);
+                        }
+                    }
+                }
+            }
+            &:hover{
+                .collapsable-box{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.fis{
+    height: 80px;
+}
+.fis2{
+    height: 80px;
+    margin-right: -74px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .nav-section {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 20px;
+        // gap: 15px;
+    }
+
+    .nav-button {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .icon {
+        margin-left: 5px;
+        transform: rotate(0deg);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .collapsable-box {
+        display: none;
+        width: 100%;
+        background-color: #ededed;
+        padding: 10px;
+        border-left: none;
+        border-top: 1px solid black;
+        position: relative;
+    }
+
+    .open .icon {
+        transform: rotate(180deg);
+    }
+
+    .open .collapsable-box {
+        display: block;
+    }
+}
+
+
+
+
+ @media (max-width:1278px) {
+     .priz .fis2{
+        height: 80px;
+        /* margin-right: -450px; */
+        margin-top: -1528px;
+        margin-left: 242px;
+        margin-bottom: 80px;
+     }
+     .navbar .fis{
+         height: 80px;
+         margin-left: -335px;
+     }
+
+     .navbar .logo-section{
+        margin-left: 6px;
+    margin-top: -71px;
+     }
+     .navbar .nav-section{
+        margin-left: 21px;
+    
+    }
+  }
